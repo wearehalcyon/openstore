@@ -16,15 +16,12 @@ return new class extends Migration
             $table->unsignedBigInteger('group_id')->default(1);
             $table->string('first_name');
             $table->string('last_name')->nullable();
-            $table->string('patronymic')->nullable();
             $table->string('email')->unique();
             $table->string('phone')->nullable();
             $table->string('fax')->nullable();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
-            $table->longText('cart')->nullable();
-            $table->longText('wishlist')->nullable();
             $table->string('ip')->nullable();
             $table->tinyInteger('status')->default(1);
             $table->string('country')->nullable();
