@@ -29,4 +29,8 @@ class Customer extends Model
         'address',
         'zip_code',
     ];
+
+    protected $hidden = [
+        'password', 'remember_token',
+    ];
 }
